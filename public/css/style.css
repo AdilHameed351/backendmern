@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar_container {
+    background: #6c5ce7;
+    box-shadow: 1px 1px 8px #000;
+}
+
+.hero_section {
+    background: #6c5ce7;
+}
+
+/* .hero_section .hero_section_top p {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.hero_section .hero_section_bottom p {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+} */
+
+.sections {
+    display: flex;
+    padding: 50px 150px;
+}
+
+.sections div {
+    margin: 0 10px;
+}
+
+.sections div h2 {
+    font-size: 18px;
+}
+
+.sections div p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.sections div button {
+    padding: 10px 20px;
+    background: #0984e3;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #0984e3;
+}
+
+.sections div button:hover {
+    background: none;
+    border: 1px solid #0984e3;
+    color: #0984e3;
+}
+
+.team_members {
+    padding: 30px 150px;
+    background: #6c5ce7;
+    text-align: center;
+    color: #fff;
+}
+
+.team_members > p {
+    margin: 10px 0 30px 0;
+}
+
+.team_members_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_members_cards div {
+    width: 225px;
+    height: 175px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.team_members_cards div p {
+    margin: 10px 0;
+}
+
+.main {
+    padding: 50px 150px;
+}
+
+.main p {
+    margin: 15px 0 25px 0;
+}
+
+.main_heading,
+.main_paragraph {
+    text-align: center;
+}
+
+.main_sections {
+    display: flex;
+    margin: 0 20px;
+}
+
+.main_left,
+.main_right {
+    margin: 0 20px;
+    box-shadow: 1px 1px 8px #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main_left img,
+.main_right img {
+    width: 100%;
+}
+
+.main_left h2,
+.main_right h2 {
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.main_left p,
+.main_right p {
+    padding: 0 10px;
+}
+
+
+.main_left button,
+.main_right button {
+    padding: 10px 20px;
+    background: #0984e3;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid #0984e3;
+}
+
+.main_left button:hover,
+.main_right button:hover {
+    background: none;
+    border: 1px solid #0984e3;
+    color: #0984e3;
+}
+
+.footer {
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    background: #6c5ce7;
+}
+
+.register_container {
+    background: linear-gradient(to right, #012ac0, #74b9ff);
+    padding: 30px 20px;
+    display: flex;
+    width: 900px;
+    margin: 30px auto;
+    box-shadow: 1px 1px 8px #000;
+}
+
+.register_left {
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    padding: 50px 30px;
+    margin-right: 30px;
+}
+
+.register_left i {
+    font-size: 30px;
+    transform: rotate(-90deg);
+    animation: animateJet 1s ease-in 0s infinite alternate;
+}
+
+@keyframes animateJet {
+    from {
+        transform: rotate(-90deg) translateX(0px);
+    }
+    to {
+        transform: rotate(-90deg) translateX(30px);
+    }
+}
+
+.register_left h2 {
+    margin: 20px 0;
+}
+
+.register_left p {
+    font-size: 14px;
+}
+
+.register_left button {
+    background: #fff;
+    padding: 10px 60px;
+    border-radius: 20px;
+    margin-top: 100px;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.register_left button:hover {
+    box-shadow: 1px 1px 8px #fff;
+}
+
+.register_right {
+    flex: 1;
+    width: 600px;
+    padding: 10px 10px 30px 80px;
+    background: #f5f6fa;
+    border-radius: 70px 0 0 70px;
+}
+
+.register_right h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.register_right_form {
+    display: flex;
+}
+
+
+.register_right_first {
+    width: 250px;
+}
+
+.register_right_first input {
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+    outline: none;
+}
+
+.register_right_second {
+    width: 200px;
+}
+
+.register_right_second .in {
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+    outline: none;
+}
+
+.register_right_second .last_name {
+    margin-bottom: 15px;
+}
+
+.register_right_second .age {
+    margin-top: 15px;
+}
+
+.register_button .btnRegister{
+    padding: 10px 50px;
+    border-radius: 30px;
+    background-color: #012ac0;
+    color: #fff;
+    border: 1px solid #012ac0;
+    outline: none;
+    cursor: pointer;
+    margin-left: 300px;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.register_button .btnRegister:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.login_container {
+    background: linear-gradient(to right, #012ac0, #74b9ff);
+    padding: 30px 20px;
+    display: flex;
+    width: 1000px;
+    margin: 30px auto;
+    box-shadow: 1px 1px 8px #000;
+}
+
+.login_left {
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    padding: 50px 30px;
+    margin-right: 30px;
+}
+
+.login_left i {
+    font-size: 30px;
+    transform: rotate(-90deg);
+    animation: animateJet1 1s ease-in 0s infinite alternate;
+}
+
+@keyframes animateJet1 {
+    from {
+        transform: rotate(-90deg) translateX(0px);
+    }
+    to {
+        transform: rotate(-90deg) translateX(30px);
+    }
+}
+
+.login_left h2 {
+    margin: 20px 0;
+}
+
+.login_left p {
+    font-size: 14px;
+}
+
+.login_left button {
+    background: #fff;
+    padding: 10px 60px;
+    border-radius: 20px;
+    margin-top: 100px;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.login_left button:hover {
+    box-shadow: 1px 1px 8px #fff;
+}
+
+.login_right {
+    flex: 1;
+    padding: 10px 10px 30px 80px;
+    background: #f5f6fa;
+    border-radius: 70px 0 0 70px;
+}
+
+.login_right h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.login_right_form {
+    display: flex;
+}
+
+.login_right_first,
+.login_right_second {
+    margin: 0 20px;
+}
+
+.login_right_first {
+    width: 250px;
+}
+
+.login_right_first input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    outline: none;
+}
+
+.login_right_second {
+    width: 250px;
+}
+
+.login_right_second .in {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    outline: none;
+}
+
+.login_right_second .last_name {
+    margin-bottom: 15px;
+}
+
+.login_right_second .age {
+    margin-top: 15px;
+}
+
+.login_button button{
+    padding: 10px 50px;
+    border-radius: 30px;
+    background-color: #012ac0;
+    color: #fff;
+    border: 1px solid #012ac0;
+    outline: none;
+    cursor: pointer;
+    margin-left: 400px;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.login_button button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width: 1200px) {
+    .team_members {
+        padding: 30px 50px;
+    }
+    
+    .team_members_cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .team_members_cards div {
+        width: 200px;
+        height: 150px;
+        margin: 20px;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .main {
+        padding: 50px;
+    }
+    
+    .register_container {
+        width: 600px;
+    }
+
+    .register_left {
+        display: none;
+    }
+    
+    .register_right_form {
+        justify-content: center;
+    }
+
+    .register_right {
+        padding: 20px;
+        border-radius: 0;
+    }   
+}
+
+@media (max-width: 768px) {
+    .sections {
+        display: block;
+        padding: 10px;
+    }
+    
+    .sections div {
+        margin: 30px 10px;
+    }
+
+    .main_sections {
+        display: block;   
+     }
+    
+    .main_left,
+    .main_right {
+        margin: 20px;
+    }
+
+    .register_container {
+        width: 400px;
+    }
+    
+    .register_right {
+        width: 100%;
+    }
+    
+    .register_right h2 {
+        font-size: 16px;
+    }
+
+    .register_right_form {
+        display: block;
+    }
+
+    .register_right_first {
+        width: 100%;
+    }
+    
+    .register_right_first input {
+        width: 100%;
+    }
+    
+    .register_right_second {
+        width: 100%;
+    }
+    
+    .register_right_second .in {
+        width: 100%;
+    }
+    
+    .register_button .btnRegister{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 0px;
+    }
+
+    .register_container {
+        width: 90%;
+    }
+    
+    .register_right {
+        width: 100%;
+    }
+    
+    .register_right_form {
+        display: block;
+    }
+
+    .register_right_first {
+        width: 100%;
+    }
+    
+    .register_right_first input {
+        width: 100%;
+    }
+    
+    .register_right_second {
+        width: 100%;
+    }
+    
+    .register_right_second .in {
+        width: 100%;
+    }
+    
+    .register_button .btnRegister{
+        width: 100%;
+        margin-left: 0;
+    }
+}

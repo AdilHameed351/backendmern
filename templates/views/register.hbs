@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>header}}
+    <title>Register Page</title>
+</head>
+<body>
+    {{>navbar}}
+
+    <div class="register_container">
+        <div class="register_left">
+            <i class="fa fa-plane" aria-hidden="true"></i>
+            <h2>Welcome</h2>
+            <p>to the complete MERN Backend course</p>
+            <a href="login"><button type="button">Login</button></a>
+        </div>
+        <div class="register_right">
+            <h2>Employee Registration Form</h2>
+            <form action="/register" method="POST">
+                <div class="register_right_form">
+                    <div class="register_right_first">
+                        <input type="text" name="firstname" id="first_name"  placeholder="First Name *" required>
+                        <br>
+                        <input type="email" name="email" id="email"  placeholder="Your Email *" required>
+                        <br>
+                        <input type="number" name="phone" id="phone"  placeholder="Your Phone *" minlength="10" maxlength="10" required>
+                        <br>
+                        <input type="password" name="password" id="password"  placeholder="Password *" required>
+                    </div>
+                    <div class="register_right_second">
+                        <input type="text" name="lastname" id="last_name" required class="in last_name" placeholder="Last Name *">
+                        <br>
+                        <label>
+                            <input type="radio" name="gender" id="male" value="male" checked> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" id="female" value="female"> Female
+                        </label>
+                        <br>
+                        <input type="number" name="age" id="age" required class="in age" placeholder="Enter Your Age *">
+                        <br>
+                        <input type="password" name="confirmpassword" id="confirm_password" required class="in" placeholder="Confirm Password *">
+                    </div>
+                </div>   
+                <div class="register_button">
+                    {{!-- <button type="button">Register</button> --}}
+                    <input type="submit" class="btnRegister" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

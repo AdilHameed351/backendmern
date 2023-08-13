@@ -1,0 +1,84 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>header}}
+    <title>Login Page</title>
+</head>
+<body>
+    {{>navbar}}
+
+    <div class="login_container">
+        <div class="login_left">
+            <i class="fa fa-plane" aria-hidden="true"></i>
+            <h2>Welcome</h2>
+            <p>to the complete MERN Backend course</p>
+            <a href="register"><button type="button">Register</button></a>
+        </div>
+        <div class="login_right">
+            <h2>Employee Login Form</h2>
+            <div class="login_right_form">
+                <div class="login_right_first">
+                    <input type="text" name="first_name" id="first_name"  placeholder="First Name *" required>
+                    <br>
+                    <input type="text" name="last_name" id="last_name"  placeholder="Last Name *" required>
+                    <br>
+                    <input type="email" name="email" id="email"  placeholder="Email *" required>
+                    <br>
+                    <input type="number" name="phone" id="phone"  placeholder="Phone *" required>
+                </div>
+                <div class="login_right_second">
+                    <input type="password" name="password" id="password" required class="in last_name" placeholder="Password *">
+                    <br>
+                    <input type="password" name="confirm_password" id="confirm_password" required class="in" placeholder="Confirm Password *">
+                    <input type="text" name="answer" id="answer" required class="in age" placeholder="Answer *">
+                    <br>
+                </div>
+            </div>   
+            <div class="login_button">
+                <button type="button">Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>header}}
+    <title>Login Page</title>
+</head>
+<body>
+    {{>navbar}}
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-sm-6 col-md-4 mx-auto">
+                <h1 class="text-center login-title my-4 fs-5 fw-bolder">Employee Login Form</h1>
+                    <div class="account-wall bg-light px-3 py-5 shadow">
+                    <img src="https://img.freepik.com/free-icon/user_318-563642.jpg?w=360" alt="login_pic" class="profile-img rounded-circle m-auto d-block mb-3" width="80" height="80">
+                    <form class="form-signin" action="/login" method="POST">
+                        <input type="email" class="form-control my-1" placeholder="Email" required name="email">
+                        <input type="password" class="form-control my-1" placeholder="Password" required name="password">
+                        <button class="btn btn-lg btn-primary btn-block w-100 fs-6" type="submit">Sign in</button>
+                        <label class="checkbox pull-left mt-3 fw-bolder">
+                            <input type="checkbox" value="remember-me">
+                            Remember me
+                        </label>
+                        <a href="#" class="pull-right need-help text-decoration-none">Need help?</a><span class="clearfix"></span>
+                    </form>
+                </div>
+                <a href="/registration" class="text-center new-account  d-block text-decoration-none my-2">Create an account</a>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
