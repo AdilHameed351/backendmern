@@ -6,9 +6,10 @@ const app = express();
 // const Register = require("./models/registers");
 const port = process.env.PORT || 3000;
 
-const static_path = path.join(__dirname, "../public");
-const template_path = path.join(__dirname, "../templates/views");
-const partials_path = path.join(__dirname, "../templates/partials");
+const static_path = path.join(__dirname, "./public");
+const template_path = path.join(__dirname, "./templates/views");
+const partials_path = path.join(__dirname, "./templates/partials");
+
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
